@@ -1,0 +1,56 @@
+---
+layout: default
+title: Home
+---
+
+<div id="home" style="margin-top: 3em;">
+
+  <p style="font-size: 1.3em; line-height: 1.5em;">
+    <strong>The Survey Software Review</strong> is a systematic, independent review of online survey software. We focus on fully hosted online survey software for distributing surveys via email. Our evaluations are based on a set of <a href="/criteria">well-defined criteria</a>.
+  </p>
+
+  <p>
+    Survey software is difficult to evaluate because there is a high up-front cost to trying out each application: learning to use each application can be time-consuming, deficiencies may not be apparent until after significant time investment, and switching is essentially impossible after data have been collected.
+  </p>
+
+  <p>
+    The goal of this project is to make it easy to compare popular survey software without having to try each application yourself.
+  </p>
+
+  <hr>
+
+  <h3>Summary</h3>
+
+  <p>
+
+  </p>
+
+  <h3>Recommendations</h3>
+  <div class="row">
+    <div class="span4">
+      <h4>Best features</h4>
+      <p>
+        <strong><a href="/reviews/qualtrics/">Qualtrics</a></strong> (92/100) had the best features and user interface out of all the software reviewed. Highly recommended if you can afford it.
+      </p>
+    </div>
+    <div class="span4">
+      <h4>Best value</h4>
+      <p><a href="/reviews/survey_gizmo"><strong>Survey Gizmo</strong></a> (86/100) does not match Qualtrics for ease of use, but it offers almost the same feature set at about half the price.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h3>Software reviewed</h3>
+  <ul class="posts">
+    {% for post in site.posts sort_by:total_score %}
+      <li><strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <span style="color: #999">{{ post.total_score }}/100</a></li>
+    {% endfor %}
+  </ul>
+
+  <h3>Could not review</h3>
+  <ul>
+    <li>SoGoSurvey (would not provide free version for evaluation as of 2013-03-22)</li>
+    <li>Zoomerang (merged with SurveyMonkey as of 2013-03-22)</li>
+  </ul>
+</div>

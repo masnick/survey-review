@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<h1>
+  {{ page.title }}
+  <span style="font-size: 0.8em; font-weight: normal; color: #ce4213;">{{ page.total_score }}/100</span>
+</h1>
+
+<p>
+  <a href="{{ page.app_url }}">{{ page.app_url }}</a>
+</p>
+
+<h4>Pros</h4>
+<ul>
+  {% for pro in page.pros %}
+    <li>{{ pro }}</li>
+  {% endfor %}
+</ul>
+
+<h4>Cons</h4>
+<ul>
+  {% for con in page.cons %}
+    <li>{{ con }}</li>
+  {% endfor %}
+</ul>
+
+<!--
+<h4>Summary</h4>
+
+{{ content }}
+-->
+
+<hr>
+
+<h4>Score breakdown</h4>
+
+<p>This is a detailed breakdown of the total score by category. Each item is scored from 0 (deficient) to 3 (excellent). The <a href="/criteria">rating criteria</a> are available for each category.</p>
+
+{% for score_category in page.scores %}
+  <h5>{{score_category | score_category}}</h5>
+  <ul>
+    {% for score in score_category[1] %}
+      <li>{{ score | score_name}}: {{ score | score_value}}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<hr>
+
+<p>
+  <small>Last updated {{ page.last_updated }}</small>
+</p>
