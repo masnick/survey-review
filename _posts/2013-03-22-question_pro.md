@@ -4,6 +4,9 @@ title: Question Pro
 last_updated: 2013-03-22
 app_url: "http://www.questionpro.com/"
 total_score: 72
+plan: Corporate
+cost: $990/year
+academic_dicount: free
 scores:
   survey_building:
     question_types: 3
@@ -30,6 +33,7 @@ scores:
     API: 1
     SSL: 1
 pros:
+  - "Free for universities and non-profits"
   - "Powerful"
   - "Relatively easy to use (interface is not super clean, but it is intuitive)"
   - "Good help docs, searchable and integrated with interface"

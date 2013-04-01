@@ -4,6 +4,9 @@ title: "SurveyMonkey"
 last_updated: 2013-03-22
 app_url: "http://surveymonkey.com"
 total_score: 63
+plan: Platinum
+cost: $780
+academic_dicount: 25%
 scores:
   survey_building:
     question_types: 1

@@ -4,6 +4,9 @@ title: Qualtrics
 last_updated: 2013-03-22
 app_url: "http://qualtrics.com"
 total_score: 93
+plan: Enterprise (regular)
+cost: ≈$1,200/year (requires quote)
+academic_dicount: "?"
 scores:
   survey_building:
     question_types: 3
@@ -32,8 +35,8 @@ scores:
 pros:
   - "Easy to use, modern interface"
   - "Creating surveys is quick"
-  - "Lots of customizability without sacraficing usability"
+  - "Lots of customizability without sacrificing usability"
   - "Extremely powerful (can do anything with this)"
 cons:
-  - "Opaque pricing"
+  - "Opaque pricing (price not available on website)"
 ---

@@ -1,0 +1,15 @@
+footer {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.well h3 {
+  margin-top: 0;
+}
+
+table.score-table .icon-star-emptuy {
+  color: #ccc;
+}

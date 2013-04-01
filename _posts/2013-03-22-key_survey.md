@@ -4,6 +4,9 @@ title: "Key Survey"
 last_updated: 2013-03-22
 app_url: "http://www.keysurvey.com/"
 total_score: 65
+plan: Single user
+cost: "unavailable; requires quote"
+academic_dicount: "?"
 scores:
   survey_building:
     question_types: 1
@@ -34,6 +37,7 @@ pros:
 cons:
   - "Slow server makes creating and taking surveys difficult and annoying"
   - "User interface is dated, slow, difficult to use"
-  - "Missing (or could not find) response validation, radio buttion grids"
+  - "Missing (or could not find) response validation, radio button grids"
+  - "Opaque pricing (price not available on website)"
 ---
 

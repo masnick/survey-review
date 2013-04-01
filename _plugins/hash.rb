@@ -12,6 +12,13 @@ module Jekyll
     def score_value(i)
       i[1]
     end
+
+    def stars(i)
+      out = (0...i.to_i).map{|i| '<i class="icon-star"></i>'}
+      out.concat (0...(3 - i.to_i)).map{|i| '<i class="icon-star-empty"></i>'}
+
+      return out.join("")
+    end
   end
 end
 

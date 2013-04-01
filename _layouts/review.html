@@ -10,6 +10,10 @@ layout: default
   <a href="{{ page.app_url }}">{{ page.app_url }}</a>
 </p>
 
+<p>
+  <strong>Plan reviewed:</strong> {{ page.plan }} ({{ page.cost }})
+</p>
+
 <h4>Pros</h4>
 <ul>
   {% for pro in page.pros %}
@@ -34,15 +38,18 @@ layout: default
 
 <h4>Score breakdown</h4>
 
-<p>This is a detailed breakdown of the total score by category. Each item is scored from 0 (deficient) to 3 (excellent). The <a href="/criteria">rating criteria</a> are available for each category.</p>
+<p>This is a detailed breakdown of the total score by category. Each item is scored from 0 (deficient) to 3 (excellent). The <a href="/criteria.html">rating criteria</a> are available for each category.</p>
 
 {% for score_category in page.scores %}
   <h5>{{score_category | score_category}}</h5>
-  <ul>
+  <table class="score-table">
     {% for score in score_category[1] %}
-      <li>{{ score | score_name}}: {{ score | score_value}}</li>
+    <tr>
+      <td class="span1">{{ score | score_value | stars }}&nbsp;&nbsp;&nbsp;</td>
+      <td class="span9">{{ score | score_name }}</td>
+    </tr>
     {% endfor %}
-  </ul>
+  </table>
 {% endfor %}
 
 <hr>
@@ -50,3 +57,24 @@ layout: default
 <p>
   <small>Last updated {{ page.last_updated }}</small>
 </p>
+
+<hr>
+
+<h3>Comments</h3>
+
+<p>Have you used {{ page.title }}? Please share your experience.</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'survey-review'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

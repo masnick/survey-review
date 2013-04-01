@@ -4,6 +4,9 @@ title: Survey Gizmo
 last_updated: 2013-03-22
 app_url: "http://www.surveygizmo.com/"
 total_score: 86
+plan: Paid
+cost: $810/year
+academic_dicount: 25%
 scores:
   survey_building:
     question_types: 3

@@ -4,6 +4,9 @@ title: "Fluid Surveys"
 last_updated: 2013-03-22
 app_url: "http://fluidsurveys.com/"
 total_score: 79
+plan: Enterprise (regular)
+cost: $1,200/year
+academic_dicount: 10%
 scores:
   survey_building:
     question_types: 3
@@ -35,7 +38,7 @@ pros:
   - "Published surveys look great"
 cons:
   - "Admin UI is not user-friendly"
-  - "Numerous options are confusing at times; desparately needs documentation built into the survey building interface"
+  - "Numerous options are confusing at times; desperately needs documentation built into the survey building interface"
   - "Lots of clicks to build surveys"
   - "No question-level survey logic (only page-level)"
 ---
