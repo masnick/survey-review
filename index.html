@@ -1,9 +1,44 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home / The Survey Software Review</title>
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css">
 
-<div id="home" style="margin-top: 3em;">
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootswatch/2.3.1/united/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/site.css" type="text/css">
+
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="" class="brand">The Survey Software Review</a>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/criteria.html">Criteria</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 4em;">
+    <div class="row">
+      <div class="span12">
+        <div class="alert alert-danger" role="alert">
+          <strong>This site is no longer maintained.</strong> It is very time-consuming to update or add reviews, so I have decided to officially announce that I am no longer making any updates.<br><br>Reviews on this site were written in March 2013, so please bear in mind that the software reviewed here may have changed substantially since then.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <div id="home" style="margin-top: 3em;">
 
   <p style="font-size: 1.3em; line-height: 1.5em;">
     <strong>The Survey Software Review</strong> is a systematic, independent review of online survey software. We focus on fully hosted online survey software for distributing surveys via email. Our evaluations are based on a set of <a href="/criteria.html">well-defined criteria</a>. You can read more <a href="/about.html">about this project</a>.
@@ -64,9 +99,19 @@ title: Home
     <div class="span4 well">
       <h3>Detailed reviews</h3>
         <ul class="posts">
-          {% for post in site.posts sort_by:total_score %}
-            <li><strong><a href="{{ post.url }}">{{ post.title }}</a></strong> <span style="color: #999">{{ post.total_score }}/100</a></li>
-          {% endfor %}
+          
+            <li><strong><a href="/reviews/surveymonkey">SurveyMonkey</a></strong> <span style="color: #999">63/100</a></li>
+          
+            <li><strong><a href="/reviews/survey_gizmo">Survey Gizmo</a></strong> <span style="color: #999">86/100</a></li>
+          
+            <li><strong><a href="/reviews/question_pro">Question Pro</a></strong> <span style="color: #999">72/100</a></li>
+          
+            <li><strong><a href="/reviews/qualtrics">Qualtrics</a></strong> <span style="color: #999">93/100</a></li>
+          
+            <li><strong><a href="/reviews/key_survey">Key Survey</a></strong> <span style="color: #999">65/100</a></li>
+          
+            <li><strong><a href="/reviews/fluid_surveys">Fluid Surveys</a></strong> <span style="color: #999">79/100</a></li>
+          
         </ul>
     </div>
   </div>
@@ -80,3 +125,30 @@ title: Home
   </ul>
 
 </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div class="row">
+        <div class="span12">
+          &copy; 2013 Max Masnick. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '514c934a108d7b56bb0000ce');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</body>
+</html>
