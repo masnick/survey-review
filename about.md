@@ -19,11 +19,11 @@ No sponsorship or other compensation was accepted for reviewing these survey app
 
 ## Contact information
 
-If you represent a survey company and would like to have your software reviewed, please [fill out this form](http://masnick.wufoo.com/forms/review-request/). Given time constraints, we may not be able to review additional software or respond to these requests.
+If you represent a survey company and would like to have your software reviewed, please [fill out this form](#). Given time constraints, we may not be able to review additional software or respond to these requests. **Note: because this site is no longer maintained, I am no longer accepting request for reviews.**
 
 If you have experience as a user of any of the applications we reviewed, please leave a comment at the bottom of the detailed review pages.
 
-All other requests/comments: please use the [general contact form](http://masnick.wufoo.com/forms/contact-me/).
+All other requests/comments: please use the [general contact form](https://masnick.org/contact).
 
 ## Thanks
 
